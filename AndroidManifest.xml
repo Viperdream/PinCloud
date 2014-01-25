@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.viperdream"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.github.viperdream.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo2"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.github.viperdream.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.github.viperdream.RegisterActivity"
+            android:parentActivityName="com.github.viperdream.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.viperdream.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.github.viperdream.LoginActivity"
+            android:parentActivityName="com.github.viperdream.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.viperdream.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.github.viperdream.DashboardActivity"
+            android:label="@string/title_activity_dashboard" >
+        </activity>
+        <activity
+            android:name="com.github.viperdream.AddPinActivity"
+            android:label="@string/title_activity_add_pin"
+            android:parentActivityName="com.github.viperdream.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.viperdream.DashboardActivity" />
+>
+        </activity>
+        <activity
+            android:name="com.github.viperdream.PinContentActivity"
+            android:label="@string/title_activity_pin_content"
+            android:parentActivityName="com.github.viperdream.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.viperdream.DashboardActivity" />
+        </activity>
+
+</application>
+
+</manifest>

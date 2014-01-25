@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 	android:id="@+id/new_pin"
+        	android:title="@string/new_pin"
+        	android:icon="@drawable/new_pin"
+        	android:showAsAction="always" />
+    
+    <item 	android:id="@+id/pin_group"
+        	android:title="@string/pin_group"
+        	android:icon="@drawable/pin_group"
+        	android:showAsAction="always" />
+    
+    <item 	android:id="@+id/action_settings"
+        	android:title="@string/action_settings"
+        	android:showAsAction="never" />
+    
+	<item 	android:id="@+id/action_logout"
+	    	android:title="@string/logout"
+	    	android:showAsAction="never" />
+	
+</menu>

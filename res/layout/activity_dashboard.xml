@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".DashboardActivity"
+    android:background="@null"
+    android:id="@+id/r_layout_1" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+android:id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+
+    <TextView 	android:id="@+id/default_text"
+	    		android:text="@string/default_text"
+	    		android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_gravity="center" 
+	    		android:gravity="center"
+	    		android:textSize="25sp"
+	    		android:textColor="@color/white_color"/>
+</RelativeLayout>
